@@ -1,0 +1,389 @@
+{
+  service: 'ctf-platform',
+  name: 'SequelizeDatabaseError',
+  parent: Error: Key column 'isActive' doesn't exist in table
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_KEY_COLUMN_DOES_NOT_EXITS',
+    errno: 1072,
+    sqlState: '42000',
+    sqlMessage: "Key column 'isActive' doesn't exist in table",
+    sql: 'ALTER TABLE `challenges` ADD INDEX `challenges_is_active` (`isActive`)',
+    parameters: undefined
+  },
+  original: Error: Key column 'isActive' doesn't exist in table
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_KEY_COLUMN_DOES_NOT_EXITS',
+    errno: 1072,
+    sqlState: '42000',
+    sqlMessage: "Key column 'isActive' doesn't exist in table",
+    sql: 'ALTER TABLE `challenges` ADD INDEX `challenges_is_active` (`isActive`)',
+    parameters: undefined
+  },
+  sql: 'ALTER TABLE `challenges` ADD INDEX `challenges_is_active` (`isActive`)',
+  parameters: {},
+  level: 'error',
+  message: "Unable to start server: Key column 'isActive' doesn't exist in table",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.addIndex (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:250:12)\n' +
+    '    at async Challenge.sync (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:999:7)\n' +
+    '    at async Sequelize.sync (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/sequelize.js:377:9)\n' +
+    '    at async startServer (/Users/alex/Desktop/ctf-platform/backend/app.js:113:7)',
+  timestamp: '2025-11-25 18:11:25'
+}
+{
+  service: 'ctf-platform',
+  name: 'SequelizeDatabaseError',
+  parent: Error: Key column 'isActive' doesn't exist in table
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_KEY_COLUMN_DOES_NOT_EXITS',
+    errno: 1072,
+    sqlState: '42000',
+    sqlMessage: "Key column 'isActive' doesn't exist in table",
+    sql: 'ALTER TABLE `challenges` ADD INDEX `challenges_is_active` (`isActive`)',
+    parameters: undefined
+  },
+  original: Error: Key column 'isActive' doesn't exist in table
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_KEY_COLUMN_DOES_NOT_EXITS',
+    errno: 1072,
+    sqlState: '42000',
+    sqlMessage: "Key column 'isActive' doesn't exist in table",
+    sql: 'ALTER TABLE `challenges` ADD INDEX `challenges_is_active` (`isActive`)',
+    parameters: undefined
+  },
+  sql: 'ALTER TABLE `challenges` ADD INDEX `challenges_is_active` (`isActive`)',
+  parameters: {},
+  level: 'error',
+  message: "Unable to start server: Key column 'isActive' doesn't exist in table",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.addIndex (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:250:12)\n' +
+    '    at async Challenge.sync (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:999:7)\n' +
+    '    at async Sequelize.sync (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/sequelize.js:377:9)\n' +
+    '    at async startServer (/Users/alex/Desktop/ctf-platform/backend/app.js:113:7)',
+  timestamp: '2025-11-25 18:12:34'
+}
+{
+  service: 'ctf-platform',
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+  parameters: {},
+  level: 'error',
+  message: "Login error: Unknown column 'first_name' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.select (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n' +
+    '    at async User.findAll (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1140:21)\n' +
+    '    at async User.findOne (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1240:12)\n' +
+    '    at async /Users/alex/Desktop/ctf-platform/backend/routes/auth.js:133:18',
+  timestamp: '2025-11-25 18:50:11'
+}
+{
+  service: 'ctf-platform',
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+  parameters: {},
+  level: 'error',
+  message: "Login error: Unknown column 'first_name' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.select (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n' +
+    '    at async User.findAll (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1140:21)\n' +
+    '    at async User.findOne (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1240:12)\n' +
+    '    at async /Users/alex/Desktop/ctf-platform/backend/routes/auth.js:133:18',
+  timestamp: '2025-11-25 18:50:12'
+}
+{
+  service: 'ctf-platform',
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+  parameters: {},
+  level: 'error',
+  message: "Login error: Unknown column 'first_name' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.select (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n' +
+    '    at async User.findAll (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1140:21)\n' +
+    '    at async User.findOne (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1240:12)\n' +
+    '    at async /Users/alex/Desktop/ctf-platform/backend/routes/auth.js:133:18',
+  timestamp: '2025-11-25 18:50:19'
+}
+{
+  service: 'ctf-platform',
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin@ctf.local' OR `User`.`email` = 'admin@ctf.local') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin@ctf.local' OR `User`.`email` = 'admin@ctf.local') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin@ctf.local' OR `User`.`email` = 'admin@ctf.local') AND `User`.`is_active` = true LIMIT 1;",
+  parameters: {},
+  level: 'error',
+  message: "Login error: Unknown column 'first_name' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.select (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n' +
+    '    at async User.findAll (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1140:21)\n' +
+    '    at async User.findOne (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1240:12)\n' +
+    '    at async /Users/alex/Desktop/ctf-platform/backend/routes/auth.js:133:18',
+  timestamp: '2025-11-25 18:51:27'
+}
+{
+  service: 'ctf-platform',
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'first_name' in 'field list'
+      at Packet.asError (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packets/packet.js:740:17)
+      at Query.execute (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:477:34)
+      at PacketParser.onPacket (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+      at PacketParser.executeStart (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/alex/Desktop/ctf-platform/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'first_name' in 'field list'",
+    sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `username`, `email`, `password`, `first_name` AS `firstName`, `last_name` AS `lastName`, `role`, `is_active` AS `isActive`, `is_verified` AS `isVerified`, `last_login` AS `lastLogin`, `avatar`, `bio`, `country`, `school`, `website`, `team_id` AS `teamId`, `score`, `solve_count` AS `solveCount`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') AND `User`.`is_active` = true LIMIT 1;",
+  parameters: {},
+  level: 'error',
+  message: "Login error: Unknown column 'first_name' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.select (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n' +
+    '    at async User.findAll (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1140:21)\n' +
+    '    at async User.findOne (/Users/alex/Desktop/ctf-platform/backend/node_modules/sequelize/lib/model.js:1240:12)\n' +
+    '    at async /Users/alex/Desktop/ctf-platform/backend/routes/auth.js:133:18',
+  timestamp: '2025-11-25 19:00:41'
+}
+{
+  service: 'ctf-platform',
+  name: 'JsonWebTokenError',
+  message: 'Token verification failed: jwt malformed',
+  level: 'error',
+  stack: 'JsonWebTokenError: jwt malformed\n' +
+    '    at module.exports [as verify] (/Users/alex/Desktop/ctf-platform/backend/node_modules/jsonwebtoken/verify.js:70:17)\n' +
+    '    at authenticateToken (/Users/alex/Desktop/ctf-platform/backend/middleware/auth.js:20:25)\n' +
+    '    at Layer.handle [as handle_request] (/Users/alex/Desktop/ctf-platform/backend/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/alex/Desktop/ctf-platform/backend/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/alex/Desktop/ctf-platform/backend/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/alex/Desktop/ctf-platform/backend/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/alex/Desktop/ctf-platform/backend/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/alex/Desktop/ctf-platform/backend/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/alex/Desktop/ctf-platform/backend/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/alex/Desktop/ctf-platform/backend/node_modules/express/lib/router/index.js:328:13)',
+  timestamp: '2025-11-25 20:48:21'
+}

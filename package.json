@@ -1,0 +1,46 @@
+{
+  "name": "ctf-platform",
+  "version": "1.0.0",
+  "description": "Full-featured Capture The Flag platform with dynamic challenges, real-time scoring, and team management",
+  "main": "backend/app.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:start\"",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "frontend:start": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "npm run frontend:build",
+    "test": "npm run backend:test && npm run frontend:test",
+    "backend:test": "cd backend && npm test",
+    "frontend:test": "cd frontend && npm test",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "k8s:deploy": "kubectl apply -f k8s/",
+    "k8s:delete": "kubectl delete -f k8s/"
+  },
+  "keywords": [
+    "ctf",
+    "capture-the-flag",
+    "cybersecurity",
+    "competition",
+    "challenges",
+    "hacking",
+    "security",
+    "nodejs",
+    "react",
+    "mysql",
+    "docker",
+    "kubernetes"
+  ],
+  "author": "CTF Platform Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
